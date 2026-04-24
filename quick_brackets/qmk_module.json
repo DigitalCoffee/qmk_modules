@@ -1,0 +1,18 @@
+{
+  "module_name": "Quick Brackets",
+  "maintainer": "DigitalCoffee",
+  "keycodes": [
+    {
+      "key": "QUICK_BRACKET",
+      "aliases": ["QK_BRKT"]
+    },
+    {
+      "key": "QUICK_CURLY_BRACES",
+      "aliases": ["QK_CBKT"]
+    },
+    {
+      "key": "QUICK_PARENTHESES",
+      "aliases": ["QK_PREN"]
+    }
+  ]
+}
