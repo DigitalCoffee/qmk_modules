@@ -1,0 +1,14 @@
+{
+  "module_name": "Arcane Keys",
+  "maintainer": "DigitalCoffee",
+  "keycodes": [
+    {
+      "key": "ARCANEL",
+      "aliases": ["ARC_L"]
+    },
+    {
+      "key": "ARCANER",
+      "aliases": ["ARC_R"]
+    }
+  ]
+}
