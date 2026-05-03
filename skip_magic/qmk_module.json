@@ -1,0 +1,10 @@
+{
+  "module_name": "Skip Magic",
+  "maintainer": "DigitalCoffee",
+  "keycodes": [
+    {
+      "key": "SKIP_MAGIC",
+      "aliases": ["SKP_MGC"]
+    }
+  ]
+}
