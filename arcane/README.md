@@ -31,7 +31,7 @@ This module defines the following keycodes:
 
 ### Required QMK Features
 
-- **Chordal Hold** must be enabled and `chordal_hold_layout` must be defined.
+- **Chordal Hold** must be enabled and handedness must be defined in either `chordal_hold_layout`, `chordal_hold_handedness()`, or in `keyboard.json`.
 - **Alternate Repeat Key** must not be disabled.
 
 ### Keymap Implementation
@@ -50,3 +50,5 @@ This module defines the following keycodes:
 > ```
 
 It's also possible to customize the functionality of the same and opposite hand Arcane invocations by defining the callbacks `process_arcane_same_hand()` and `process_arcane_opposite_hand()`. You can use `get_last_keycode()` to get the keycode for the previous key.
+
+Sometimes the handedness of a key cannot be determined, specifically for key records that do not correlate to a single physical key position such as combos. Implement the callback `get_last_hand_user()` if you wish to define the handedness of such records so that it's possible to specify opposite hand functionality for them, otherwise both Arcane keys will act as though the last key was on the same hand.

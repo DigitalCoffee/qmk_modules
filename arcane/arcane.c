@@ -50,7 +50,11 @@ bool remember_last_key_arcane(uint16_t keycode, keyrecord_t* record, uint8_t* re
   last_hand = chordal_hold_layout[record->event.key.row][record->event.key.col];
   // There may not be a position for the key if it's not defined, a combo, etc.
   if (!last_hand) {
-      last_hand = '*';
+      last_hand = get_last_hand_user(keycode, record);
   }
   return true;
+}
+
+__attribute__((weak)) char get_last_hand_user(uint16_t keycode, keyrecord_t* record) {
+  return '*';
 }
